@@ -12,6 +12,15 @@ docker run -it --rm \
   docker.m.daocloud.io/nvidia/cuda:12.4.0-base-ubuntu22.04
 
 ```
+```sh
+docker run -itd \
+  --restart always \
+  --name zb-cc \
+  --hostname H4 \
+  -p 11030-11032:5900-5902 \
+  -v $PWD:/cv \
+  ubuntu:22.04
+```
 
 ### 2. run
 ```sh
